@@ -14,7 +14,7 @@
   <p class="text-white p-4">Cargando...</p>
 {:then ResListaMusical}
   <div class="p-6 text-white">
-    <!-- 4 Tarjetas Grandes -->
+    <p>Destacados</p>
     <h2 class="text-2xl font-bold mb-4">Lo más escuchado</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
       {#each ResListaMusical.data.tracks.slice(0, 4) as track}
@@ -37,3 +37,5 @@
     {/each}
 </div>
 {/await}
+
+
