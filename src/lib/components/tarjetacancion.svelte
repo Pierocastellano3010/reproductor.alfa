@@ -1,10 +1,10 @@
 <script>
-import { actualizarCancion } from "$lib/store/cancion.svelte";
+import { setSong } from "$lib/store/cancion.svelte";
     const { track } = $props();
 
     const handlerClick = () => {
         // La interaccion para que suene
-        actualizarCancion(track)
+        setSong (track)
     };
 </script>
 
