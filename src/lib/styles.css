@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #121212; 
+  box-sizing: border-box;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #242424; 
+  border-radius: 20px;       
+  padding: 8px 16px;
+  max-width: 400px;
+  transition: 0.3s;          
+}
+
+.search-bar .icon {
+  font-size: 14px;
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+}
+
+
+.search-bar:hover, 
+.search-bar:focus-within {
+  background-color: #333333;
+  transform: translateY(-2px);
+}

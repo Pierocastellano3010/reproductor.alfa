@@ -9,7 +9,7 @@ import { actualizarCancion } from "$lib/store/cancion.svelte";
 </script>
 
 <button onclick={handlerClick}>
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-4 bg-fondo">
 
         <img
             src={track.album.image}
@@ -17,10 +17,10 @@ import { actualizarCancion } from "$lib/store/cancion.svelte";
             class="rounded-full w-16"
         />
 
-        <div class="flex flex-col items-start">
-            <p class=" font-bold">{track.title}</p>
+        <div class="flex flex-col items-start tex">
+            <p class=" font-bold text-amber-50">{track.title}</p>
 
-            <p class="opacity-60">{track.album.title}</p>
+            <p class="opacity-60 text-texto">{track.album.title}</p>
         </div>
         
     </div>
