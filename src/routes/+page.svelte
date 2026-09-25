@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import Tarjetacancion from "$lib/components/tarjetacancion.svelte";
     import axios from "axios";
 
