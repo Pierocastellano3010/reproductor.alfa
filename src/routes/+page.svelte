@@ -18,7 +18,7 @@
     <h2 class="text-2xl font-bold mb-4">Lo más escuchado</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
       {#each ResListaMusical.data.tracks.slice(0, 4) as track}
-        <button onclick={() => actualizarCancion(track)} class="bg-[#181818] hover:bg-[#282828] p-3 rounded-lg text-left">
+        <button onclick={() => actualizarCancion(track)} class="bg-[#181818] hover:bg-fondo2 p-3 rounded-lg text-left">
           <img src={track.album.image} alt={track.title} class="w-full aspect-square object-cover rounded-md mb-2" />
           <p class="font-bold text-sm truncate">{track.title}</p>
           <p class="text-xs text-gray-400 truncate">{track.album.title}</p>
