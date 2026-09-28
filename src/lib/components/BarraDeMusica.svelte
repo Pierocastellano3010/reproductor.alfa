@@ -34,9 +34,9 @@
     onloadedmetadata={() => (duration = audioRef?.duration || 0)}
   ></audio>
 
-  <footer class="fixed bottom-0 left-0 w-full bg-[#121212] text-white px-6 py-3 flex items-center justify-between z-50">
+  <footer class="fixed bottom-0 left-0 w-full bg-fondo text-white px-6 py-3 flex items-center justify-between z-50">
     
-    <!-- 1. Izquierda: Portada y Canción -->
+
     <div class="flex items-center gap-3 w-1/4 min-w-[180px]">
       <img 
         src={trackState.Song.album.image} 
@@ -49,9 +49,9 @@
       </div>
     </div>
 
-    <!-- 2. Centro: Botón Verde + Barra con tiempos -->
+
     <div class="flex flex-col items-center gap-2 w-2/4 max-w-2xl">
-      <!-- Solo el botón circular verde de Play / Pausa -->
+
       <button 
         onclick={togglePlay} 
         class="bg-[#1db954] hover:scale-105 text-black rounded-full w-9 h-9 flex items-center justify-center transition shadow-md"
@@ -63,7 +63,7 @@
         {/if}
       </button>
 
-      <!-- Barra de tiempo con minutos a los lados -->
+
       <div class="flex items-center gap-3 w-full text-xs text-gray-400 font-sans">
         <span>{formatTime(currentTime)}</span>
         <input 
@@ -74,13 +74,13 @@
           oninput={(e) => {
             if (audioRef) audioRef.currentTime = parseFloat(e.target.value);
           }}
-          class="w-full h-1 bg-[#4d4d4d] rounded-lg appearance-none cursor-pointer accent-[#1db954] hover:accent-[#1ed760]"
+          class="w-full h-1 bg-[#4d4d4d] rounded-lg appearance-none cursor-pointer accent-texto hover:accent-[#1ed760]"
         />
         <span>{formatTime(duration)}</span>
       </div>
     </div>
 
-    <!-- 3. Derecha: Solo Volumen -->
+  
     <div class="flex items-center justify-end gap-2 w-1/4 min-w-[180px] text-gray-400">
       <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
       <input 
