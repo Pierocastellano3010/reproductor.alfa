@@ -11,6 +11,8 @@ export interface Song {
         thumbnail: string
     }
     audio: string
+    duration: string
+    
 }
 
 
@@ -23,4 +25,5 @@ export const trackState = $state<{
 // @ts-ignore
 export const setSong = (newSong: Song) => {
     trackState.Song = newSong
+    
 }
