@@ -34,7 +34,7 @@
   </div>
 
 
-  <div class="col-span-2 text-right text-sm font-medium text-[#1db954] pr-2">
+  <div class="col-span-2 text-right text-sm font-medium text-texto pr-2">
     {track.duration || "3:48"}
   </div>
 </button>

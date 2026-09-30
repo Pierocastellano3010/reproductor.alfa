@@ -37,7 +37,7 @@
   <footer class="fixed bottom-0 left-0 w-full bg-fondo text-white px-6 py-3 flex items-center justify-between z-50">
     
 
-    <div class="flex items-center gap-3 w-1/4 min-w-[180px]">
+    <div class="flex items-center gap-3 w-1/4 min-w-45">
       <img 
         src={trackState.Song.album.image} 
         alt={trackState.Song.title} 
@@ -54,7 +54,7 @@
 
       <button 
         onclick={togglePlay} 
-        class="bg-[#1db954] hover:scale-105 text-black rounded-full w-9 h-9 flex items-center justify-center transition shadow-md"
+        class="bg-texto hover:scale-105 text-black rounded-full w-9 h-9 flex items-center justify-center transition shadow-md"
       >
         {#if isPlaying}
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
@@ -81,7 +81,7 @@
     </div>
 
   
-    <div class="flex items-center justify-end gap-2 w-1/4 min-w-[180px] text-gray-400">
+    <div class="flex items-center justify-end gap-2 w-1/4 min-w-45 text-gray-400">
       <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
       <input 
         type="range" 
@@ -94,7 +94,7 @@
           volume = v;
           if (audioRef) audioRef.volume = v;
         }}
-        class="w-24 h-1 bg-[#4d4d4d] rounded-lg appearance-none cursor-pointer accent-white hover:accent-[#1db954]"
+        class="w-24 h-1 bg-[#4d4d4d] rounded-lg appearance-none cursor-pointer accent-white hover:accent-texto"
       />
     </div>
 
